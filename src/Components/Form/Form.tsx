@@ -2,11 +2,12 @@ import { useMutation, useQueryClient } from "react-query";
 import "./Form.scss";
 import { Product } from "../../Interface/Product.interface";
 import { createProduct } from "../../Interface/Product";
-import { v4 as uuidv4 } from "uuid";
+import { useId } from "react";
 
 export const Form = () => {
 
   const queryClient = useQueryClient();
+  const uniqueId = useId();
 
   // Mutation Function
   const addMutation = useMutation({
@@ -27,7 +28,7 @@ export const Form = () => {
     const productData = Object.fromEntries(formData);
 
     const product: Product = {
-      id: uuidv4(),
+      id: parseInt(uniqueId),
       name: productData.product_name as string,
       category: productData.product_category as string,
       price: parseFloat(productData.price as string),    
