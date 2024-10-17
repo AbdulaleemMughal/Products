@@ -1,0 +1,37 @@
+@import "../../variable.scss";
+
+.form {
+  background-color: $bg-color;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  margin-top: 10px;
+
+  label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+
+    input {
+      width: 65%;
+      border: none;
+      background-color: $bg-color;
+      outline: none;
+      border-bottom: 1px solid black;
+
+      &:focus {
+        border-bottom: 2px solid black;
+      }
+    }
+  }
+
+  button {
+    background-color: $primary-color;
+    border: none;
+    padding: 10px 0px;
+    margin-top: 10px;
+    border-radius: 25px;
+  }
+}

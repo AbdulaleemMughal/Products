@@ -1,0 +1,12 @@
+{
+  "products": [
+    {
+      "id": "c2ccf47a-eaf9-464f-a008-cd45d111202b",
+      "name": "abdulaleem",
+      "category": "z",
+      "price": 23,
+      "description": "The best phone in the world",
+      "quantity": 32
+    }
+  ]
+}
