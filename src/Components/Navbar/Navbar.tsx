@@ -26,9 +26,7 @@ export const Navbar = ({ styles }: NavbarProps) => {
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link to="link-2" as={NavLink}>
             <TbReload style={styles} onClick={handleReload} />
-          </Nav.Link>
         </Nav.Item>
       </div>
     </>

@@ -15,7 +15,7 @@ type BodyProps = {
 
 // Functions
 const fetchProducts = () => {
-  return axios.get("http://localhost:5000/products");
+  return axios.get("https://your-json-server-app.herokuapp.com/products");
 };
 
 //Component
