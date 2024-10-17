@@ -25,7 +25,7 @@ export const Body = ({ styles }: BodyProps) => {
   const [allProducts, setAllProducts] = useState<Product[]>([]);
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
 
-  const { data, isLoading, error } = useQuery("products", fetchProducts, {
+  const { isLoading, error } = useQuery("products", fetchProducts, {
     onSuccess: (data) => {
       if (data?.data) {
         setAllProducts(data?.data);
